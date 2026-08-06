@@ -5,11 +5,18 @@ description = ""
 authors = [
     {name = "mahdihaghverdi",email = "mahdihaghverdiliewpl@gmail.com"}
 ]
+
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "kopf (>=1.44.6,<2.0.0)"
 ]
 
+
+[[tool.poetry.source]]
+name = "runflare-private-mirror"
+url = "https://mirror-pypi.runflare.com"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
