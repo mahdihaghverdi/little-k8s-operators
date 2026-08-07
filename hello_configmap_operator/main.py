@@ -10,6 +10,7 @@ import kopf
 
 sys.path.append(str(Path(__file__).parent.parent))
 importlib.import_module("controllers.handlers")
+importlib.import_module("controllers.daemons")
 logger = logging.getLogger("hello-configmap")
 
 

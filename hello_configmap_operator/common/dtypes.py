@@ -1,15 +1,22 @@
 from datetime import datetime
 from enum import StrEnum
 from typing import Any
+from uuid import UUID
 
 from pydantic import BaseModel
 
-__all__ = ["APIGroup", "CreateStatus", "Metadata", "Version", "api_version_gen"]
+__all__ = [
+    "APIGroup",
+    "CreateStatus",
+    "DaemonCancelled",
+    "Metadata",
+    "Version",
+    "api_version_gen",
+]
 
 
 class CreateStatus(BaseModel):
-    createAt: datetime
-    updated: bool = False
+    create_at: datetime
 
 
 class APIGroup(StrEnum):
@@ -60,3 +67,9 @@ def api_version_gen(group: APIGroup, version: Version) -> str:
 class Metadata(BaseModel):
     name: str
     labels: dict[str, Any]
+    namespace: str = "default"
+    uid: UUID | None = None
+
+
+class DaemonCancelled(BaseModel):
+    daemon_cancelled: bool = True
