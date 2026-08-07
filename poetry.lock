@@ -865,28 +865,9 @@ description = "Simple module to parse ISO 8601 dates"
 optional = false
 python-versions = "*"
 groups = ["main"]
-markers = "python_version >= \"3.14\""
 files = [
     {file = "iso8601-0.1.16-py2.py3-none-any.whl", hash = "sha256:906714829fedbc89955d52806c903f2332e3948ed94e31e85037f9e0226b8376"},
     {file = "iso8601-0.1.16.tar.gz", hash = "sha256:36532f77cc800594e8f16641edae7f1baf7932f05d8e508545b95fc53c6dc85b"},
-]
-
-[package.source]
-type = "legacy"
-url = "https://mirror-pypi.runflare.com"
-reference = "runflare-private-mirror"
-
-[[package]]
-name = "iso8601"
-version = "2.1.0"
-description = "Simple module to parse ISO 8601 dates"
-optional = false
-python-versions = ">=3.7,<4.0"
-groups = ["main"]
-markers = "python_version < \"3.14\""
-files = [
-    {file = "iso8601-2.1.0-py3-none-any.whl", hash = "sha256:aac4145c4dcb66ad8b648a02830f5e2ff6c24af20f4f482689be402db2429242"},
-    {file = "iso8601-2.1.0.tar.gz", hash = "sha256:6b1d3829ee8921c4301998c909f7829fa9ed3cbdac0d3b16af2d743aed1ba8df"},
 ]
 
 [package.source]
@@ -2109,4 +2090,4 @@ reference = "runflare-private-mirror"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "a553c8494dc94d5537f84b140da0ad24b0b3749576c9086c109e1554e57f2c34"
+content-hash = "be9384df18598d83eb6d65dff7d0aa8e17e5ac41b66f18069d885d4bf91aa5be"
