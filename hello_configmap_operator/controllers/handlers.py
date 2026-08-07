@@ -26,7 +26,7 @@ async def create_fn(meta: kopf.Meta, spec: kopf.Spec, **_: Any) -> CreateStatus:
         metadata=Metadata(name=f"{meta.name}-configmap", labels=meta.labels)
     )
     config_map_data = config_map.model_dump(mode="json")
-    config_map_data["spec"] = {"message": spec["message"]}
+    config_map_data["data"] = {"message": spec["message"]}
 
     kopf.adopt(config_map_data)
 
