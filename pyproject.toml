@@ -9,8 +9,9 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "kopf (>=1.44.6,<2.0.0)",
-    "kubernetes (>=36.0.3,<37.0.0)"
+    "kubernetes (==32.0.1)",
+    "pydantic (>=2.13.4,<3.0.0)",
+    "kopf[uvloop] (>=1.44.6,<2.0.0)",
 ]
 
 

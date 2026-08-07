@@ -1,0 +1,12 @@
+apiVersion: "mahdi.dev/v1"
+kind: PlayGround
+metadata:
+  name: pg-1
+  labels:
+    pg: "3"
+    group: "Hello-World"
+
+spec:
+  name: "Mahdi"
+  lastname: "Haghverdi"
+  major: "Computer Engineering"
