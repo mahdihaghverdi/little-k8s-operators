@@ -17,6 +17,9 @@ spec:
               properties:
                 message:
                   type: string
+            status:
+              type: object
+              x-kubernetes-preserve-unknown-fields: true
   scope: Namespaced
   names:
     plural: hellos

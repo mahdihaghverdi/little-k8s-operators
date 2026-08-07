@@ -1,0 +1,8 @@
+apiVersion: "demo.io/v1"
+kind: Hello
+metadata:
+  name: my-hello-1
+  labels:
+    app: hello-1
+spec:
+  message: "This is my message"
