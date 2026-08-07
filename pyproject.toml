@@ -19,6 +19,10 @@ name = "runflare-private-mirror"
 url = "https://mirror-pypi.runflare.com"
 priority = "primary"
 
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.6.1"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
