@@ -6,3 +6,4 @@ metadata:
     app: hello-1
 spec:
   message: "This is my message"
+  immutable: true
