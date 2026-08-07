@@ -23,7 +23,11 @@ async def create_fn(meta: kopf.Meta, spec: kopf.Spec, **_: Any) -> CreateStatus:
     logger.info(f"{meta.name} is created.")
 
     config_map = ConfigMap(
-        metadata=Metadata(name=f"{meta.name}-configmap", labels=meta.labels)
+        metadata=Metadata(
+            name=f"{meta.name}-configmap",
+            labels=meta.labels,
+        ),
+        immutable=spec["immutable"],
     )
     config_map_data = config_map.model_dump(mode="json")
     config_map_data["data"] = {"message": spec["message"]}
